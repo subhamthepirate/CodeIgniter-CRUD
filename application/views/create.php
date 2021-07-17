@@ -36,7 +36,7 @@
                     <br>
                     <div class="form-group">
                         <button class="btn btn-primary">Create</button>
-                        <a href="<?php echo base_url().'index.php/user/index';?>" class="btn btn-secondary">Cancel</a>
+                        <a href="<?php echo base_url().'index.php/user/index';?>" class="btn btn-danger">Cancel</a>
                     </div>
                 </div>
             </form>

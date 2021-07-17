@@ -1,5 +1,6 @@
 <?php
 class User extends CI_Controller{
+    
     function index(){
         $this->load->model('User_model');
         $users = $this->User_model->all();
@@ -56,7 +57,7 @@ class User extends CI_Controller{
             redirect(base_url().'index.php/user/index');
         }
         $this->User_model->deleteUser($userId);
-        $this->session->set_flashdata('success','Record Deleted Successfully');
+        //$this->session->set_flashdata('success','Record Deleted Successfully');
             redirect(base_url().'index.php/user/index');
     }
 }
